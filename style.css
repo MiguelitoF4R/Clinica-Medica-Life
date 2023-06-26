@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Roboto;
+}
+
+header, section, footer{
+    min-width: 320px;
+}
+
+.header-container{
+    background-color: rgb(11, 203, 216);
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo-header img{
+    width: 120px;
+}
+
+.links-header a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding: 5px 10px;
+}
+
+.links-header a:hover{
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 500px){
+    .header-container{
+        justify-content: center;
+    }
+
+    .links-header{
+        display: flex;
+        justify-content: center;
+        border-top: 2px solid rgb(80, 79, 79); 
+    }
+}
+
+@media screen and (max-width: 768px){
+    .header-container{
+        flex-direction: column;
+    }
+
+    .links-header{
+        display: flex;
+        justify-content: center;
+        border-top: 2px solid rgb(80, 79, 79); 
+    }
+}
+
+.banner-container{
+    background-image: url(./assets/recepcao.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.banner{
+    padding-left: 30px;
+    line-height: 60px;
+    color: white;
+    font-size: 35px;
+}
+
+.banner h1{
+    font-weight: 300;
+}
+
+@media screen and (max-width: 425px){
+    .banner-container{
+        height: 200px;
+    }
+
+    .banner h1{
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .banner-container{
+        height: 300px;
+        justify-content: center;
+    }
+
+    .banner h1{
+        font-size: 25px;
+        line-height: 40px;
+    }
+}
+
+.sobre-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.sobre-clinica{
+    text-align: center;
+    width: 600px;
+}
+
+.sobre-clinica h2{
+    margin: 30px 0;
+    font-size: 30px;
+}
+
+.lista-sobre-clinica{
+    display: flex;
+    align-items: center;
+}
+
+.lista-sobre-clinica ul{
+    margin: 0 50px;
+}
+
+.lista-sobre-clinica p{
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 620px){
+    .lista-sobre-clinica img{
+        display: none;
+    }
+
+    .sobre-clinica{
+        width: 300px;
+        text-align: center;
+    }
+
+    .sobre-clinica h2{
+        font-size: 25px;
+    }
+}
+
+.especialidades-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.especialidades-container a{
+    background-color: rgb(11, 203, 216);
+    color: white;
+    font-weight: 600;
+    margin: 60px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.especialidades-container a:hover{
+    background-color: rgb(0, 0, 0);
+}
+
+.titulo-especialidades{
+    width: 700px;
+    text-align: center;
+    margin: 60px 0;
+}
+
+.titulo-especialidades h2{
+    margin-bottom: 30px;
+}
+
+.especialidades-cards{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    padding-bottom: 15px;
+    box-shadow: 0 0 15px 5px rgb(73, 73, 73);
+}
+
+.card img{
+    width: 350px;
+}
+
+@media screen and (max-width: 680px){
+    .titulo-especialidades{
+        width: 250px
+    }
+
+    .titulo-especialidades h2{
+        font-size: 20px;
+    }
+
+    .card img{
+        width: 250px;
+    }
+}
+
+.contato-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    color: gray;
+}
+
+.contatos-content{
+    text-align: center;
+    width: 700px;
+}
+
+.contatos-content p, h4{
+    padding: 15px 0;
+}
+
+.contatos-content span{
+    color: black;
+    font-weight: 600;
+}
+
+.contatos-iframe{
+    margin-bottom: 60px;
+}
+
+@media screen and (max-width: 650px){
+    .contatos-content{
+        width: 200px;
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .contatos-iframe{
+        display: none;
+    }
+}
+
+.footer-container{
+    background-color: rgb(11, 203, 216);
+    text-align: center;
+}
+
+.footer-container p{
+    padding: 10px 0;
+}
+
+.footer-container em{
+    font-weight: 900;
+}
